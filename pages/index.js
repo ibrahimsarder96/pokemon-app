@@ -1,6 +1,23 @@
 import Head from 'next/head'
+import Link from "next/link";
 
-export default function Home() {
+
+import Image from "next/image";
+
+export async function getStaticProps() {
+  const resp = await fetch(
+    "https://jherr-pokemon.s3.us-west-1.amazonaws.com/index.json"
+  );
+  return {
+    props: {
+      pokemon: await resp.json(),
+    },
+  };
+}
+
+export default function Home({pokemon}) {
+ if(pokemon){
+  const data = pokemon.slice(0, 10);
   return (
     <>
       <Head>
@@ -56,11 +73,11 @@ export default function Home() {
        </section>
           </div>
         <div className="mt-20">
-          <HeaderMid></HeaderMid>
-          <Blog></Blog>
+          
         </div>
         </div>
       </main>
     </>
   )
+ }
 }
