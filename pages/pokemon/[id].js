@@ -37,7 +37,6 @@ export default function Details({ pokemon }) {
       <Head>
         <title>{pokemon.name}</title>
       </Head>
-      
       <div className="px-20">
       <div className="flex py-9 justify-center">
       <Image

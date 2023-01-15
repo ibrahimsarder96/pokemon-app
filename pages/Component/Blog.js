@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Blog = () => {
   return (
-    <div className="bg-white grid grid-cols-2 gap-1 mt-10 w-screen">
+    <div className="bg-white grid grid-cols-2 gap-1 mt-10 w-screen px-4">
       <div className="grid lg:grid-cols-3 sm:grid-cols-1">
       <div className="col-span-2">
       <h1 className="text-black">What distinguishes a fictional universe from a simple setting is the level of detail and internal consistency. A fictional universe has an established continuity and internal logic that must be adhered to throughout the work and even across separate works.
