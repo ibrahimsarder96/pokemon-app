@@ -11,13 +11,55 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"/>
       </Head>
       <main className='bg-white h-screen'>
-      <button className="btn btn-active">Button</button>
-<button className="btn btn-active btn-primary">Button</button>
-<button className="btn btn-active btn-secondary">Button</button>
-<button className="btn btn-active btn-accent">Button</button>
-<button className="btn btn-active btn-ghost">Button</button>
-<button className="btn btn-active btn-link">Button</button>
-<h1 className='text-5xl text-bold text-black'>heoo</h1>
+      <div>
+          <div>
+            <div style={{
+              zindex: 1, 
+              position: "absolute",
+              width: '100vw', 
+              height: '125vh'}}>
+              <Image src="/Background.png" 
+              alt="background" 
+              layout="fill" 
+              objectFit="cover"/>
+            </div>
+    <section>
+       <div style={{position: 'relative'}} className="flex py-9 justify-center">
+      <Image
+      src="/Logo.png"
+      width='300'
+      height="100"
+      ></Image>
+    </div>
+       <div
+         className="grid lg:grid-cols-5 sm:grid-cols-1 gap-10 mx-6">
+          {data.map((pokemon) => (
+            <div className="card w-56 rounded-br-lg bg-white cursor-pointer hover:bg-blue-400 shadow-xl">
+              <Link href={`/pokemon/${pokemon.id}`}>
+              <p className="m-5">{pokemon.id}</p>
+            <figure className="mx-10 pt-4">
+            <img src={`https://jherr-pokemon.s3.us-west-1.amazonaws.com/${pokemon.image}`}
+                 alt={pokemon.name}
+                  className="rounded-xl" />
+            </figure>
+            <div className="ml-4 pb-4">
+              <h2 className="text-black my-4 text-xl font-bold">{pokemon.name}</h2>
+              <div className="flex gap-3">
+                <button className="btn btn-sm hover:bg-lime-400 bg-lime-400 text-white border-none">Grass</button>
+                <button className="btn btn-sm hover:bg-purple-400 bg-purple-400 text-white border-none">Poison</button>
+              </div>
+            </div>
+              </Link>
+          </div>
+          ))}
+        </div>
+       </section>
+          </div>
+        <div className="mt-20">
+          <HeaderMid></HeaderMid>
+          <Blog></Blog>
+        </div>
+        </div>
       </main>
     </>
   )
