@@ -13,17 +13,17 @@ const Blog = () => {
      </h1>
       </div>
       <div className="">
-      <Image src="/image04.png" width='200' height='100'></Image>
+      <Image src="/image04.png" width='300' height='100'></Image>
       </div>
      </div>
-     <h1 className="text-black">The history and geography of a fictional universe are well defined, and maps and timelines are often included in works set within them. Even new languages may be constructed. When subsequent works are written within the same universe, care is usually taken to ensure that established facts of the canon are not violated. Even if the fictional universe involves concepts such as elements of magic that don't exist in the real world, these must adhere to a set of rules established by the author.
+     <h1 className="text-black">The history and geography of a fictional universe are well defined, and maps and timelines are often included in works set within them. Even new languages may be constructed. When subsequent works are written within the same universe, care is usually taken to ensure that established facts of the canon are not violated.
      </h1>
       </div>
       <div>
         <div  className="mb-10">
-        <Image src="/image03.png" width='200' height='100'></Image>
+        <Image src="/image03.png" width='300' height='100'></Image>
         </div>
-        <Image src="/image02.png" width='200' height='100'></Image>
+        <Image src="/image02.png" width='300' height='100'></Image>
       </div>
       </div>
       <div>
@@ -31,9 +31,9 @@ const Blog = () => {
         <h1 className="text-black">A modern example of a fictional universe is that of the Avatar film series, as James Cameron invented an entire ecosystem, with a team of scientists to test whether it was viable. Additionally, he commissioned a linguistics expert to invent the Na'vi language.
      </h1>
         </div>
-     <div className="grid grid-cols-3">
+     <div className="grid grid-cols-3 my-5">
       <div>
-      <Image src="/image05.png" width='200' height='100'></Image>
+      <Image src="/image05.png" width='300' height='100'></Image>
       </div>
       <div className="col-span-2">
       <h1 className="text-black">Virtually every successful fictional TV series or comic book develops its own "universe" to keep track of the various episodes or issues. Writers for that series must follow its story bible,[3] which often becomes the series canon.Frequently, when a series is perceived by its creators as too complicated or too self-inconsistent (because of, for example, too many writers), the producers or publishers may introduce retroactive continuity (retcon) to make future editions easier to write and more consistent. This creates an alternate universe that future authors can write about.
@@ -41,22 +41,22 @@ const Blog = () => {
       </div>
      </div>
      <div className="grid grid-cols-3">
-      <div className="mt-5">
-      <Image src="/image01.png" width='200' height='100'></Image>
+      <div className="">
+      <Image src="/image01.png" width='300' height='100'></Image>
       </div>
       <div className="col-span-2">
-      <h1 className="text-black">These stories about the universe or universes that existed before the retcon are usually not canonical, unless the franchise-holder gives permission. Crisis on Infinite Earths was an especially sweeping example.
+      <h1 className="text-black my-5">These stories about the universe or universes that existed before the retcon are usually not canonical, unless the franchise-holder gives permission. Crisis on Infinite Earths was an especially sweeping example.
 Some writers choose to introduce elements or characters from one work into another, to present the idea that both works are set in the same universe. For example, the character of Ursula Buffay from American sitcom Mad About You was also a recurring guest star in Friends, despite the two series having little else in common.
      </h1>
       </div>
      </div>
-     <h1 className="text-black">A famous example of a detailed fictional universe is Arda (more popularly known as Middle-earth), of J. R. R. Tolkien's books The Lord of the Rings, The Hobbit, and The Silmarillion. He created first its languages and then the world itself, which he states was "primarily linguistic in inspiration and was begun in order to provide the necessary 'history' for the Elvish tongues."[2]</h1>
       </div>
       <div>
-       <div>
        <h1 className="text-black"> Fellow NBC series Seinfeld also contained crossover references to Mad About You. L. Frank Baum introduced the characters of Cap'n Bill and Trot (from The Sea Fairies) into the Oz series in The Scarecrow of Oz, and they made a number of appearances in later Oz books. In science fiction, A. Bertram Chandler introduced into his future Galactic civilization the character Dominic Flandry from Poul Anderson's quite different Galactic future (he had Anderson's consent)—on the assumption that these were two alternate history timelines and that people could on some occasions cross from one to the other.
      </h1>
-       </div>
+      </div>
+      <div>
+      <h1 className="text-black">A famous example of a detailed fictional universe is Arda (more popularly known as Middle-earth), of J. R. R. Tolkien's books The Lord of the Rings, The Hobbit, and The Silmarillion. He created first its languages and then the world itself, which he states was "primarily linguistic in inspiration and was begun in order to provide the necessary 'history' for the Elvish tongues."[2]</h1>
       </div>
     </div>
   );

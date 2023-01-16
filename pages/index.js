@@ -32,7 +32,9 @@ export default function Home({pokemon}) {
               zindex: 1, 
               position: "absolute",
               width: '100vw', 
-              height: '125vh'}}>
+              height: '125vh',
+              
+              }}>
               <Image src="/Background.png" 
               alt="background" 
               layout="fill" 
