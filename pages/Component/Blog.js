@@ -12,8 +12,10 @@ const Blog = () => {
       <h1 className="text-black"> So, for instance, many books may be set in conflicting fictional versions of Victorian London, but all the stories of Sherlock Holmes are set in the same Victorian London. However, the various film series based on Sherlock Holmes follow their own separate continuities, thus not taking place in the same fictional universe.
      </h1>
       </div>
-      <div className="">
-      <Image src="/image04.png" width='300' height='100'></Image>
+      <div style={{
+              width: '25vw', 
+              height: '25vh'}}>
+      <Image src="/image04.png" width='200' height='100'></Image>
       </div>
      </div>
      <h1 className="text-black">The history and geography of a fictional universe are well defined, and maps and timelines are often included in works set within them. Even new languages may be constructed. When subsequent works are written within the same universe, care is usually taken to ensure that established facts of the canon are not violated.
