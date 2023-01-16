@@ -33,7 +33,7 @@ export async function getStaticProps({ params }) {
 
 export default function Details({ pokemon }) {
   return (
-    <div className="bg-white h-screen">
+    <div className="lg:h-screen bg-white ">
       <Head>
         <title>{pokemon.name}</title>
       </Head>

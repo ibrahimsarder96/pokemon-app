@@ -25,7 +25,7 @@ export default function Home({pokemon}) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"/>
       </Head>
-      <div className='bg-white h-screen'>
+      <div className='bg-white'>
       <div>
           <div>
             <div style={{
@@ -33,7 +33,6 @@ export default function Home({pokemon}) {
               position: "absolute",
               width: '100vw', 
               height: '125vh',
-              
               }}>
               <Image src="/Background.png" 
               alt="background" 
@@ -51,7 +50,7 @@ export default function Home({pokemon}) {
        <div
          className="grid lg:grid-cols-5 sm:grid-cols-1 gap-10 ml-7">
           {data.map((pokemon) => (
-            <div className="card w-56 rounded-br-lg bg-white cursor-pointer hover:bg-blue-400 shadow-xl">
+            <div className="card w-56 rounded-br-lg bg-white cursor-pointer hover:bg-blue-400 hover:text-white shadow-xl">
               <Link href={`/pokemon/${pokemon.id}`}>
               <p className="m-5">{pokemon.id}</p>
             <figure className="mx-10 pt-4">
@@ -60,7 +59,7 @@ export default function Home({pokemon}) {
                   className="rounded-xl" />
             </figure>
             <div className="ml-4 pb-4">
-              <h2 className="text-black my-4 text-xl font-bold">{pokemon.name}</h2>
+              <h1 className="text-black my-4 text-xl font-bold">{pokemon.name}</h1>
               <div className="flex gap-3">
                 <button className="btn btn-sm hover:bg-lime-400 bg-lime-400 text-white border-none">Grass</button>
                 <button className="btn btn-sm hover:bg-purple-400 bg-purple-400 text-white border-none">Poison</button>
